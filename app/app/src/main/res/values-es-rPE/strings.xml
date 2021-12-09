@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="title_app">Mi Restaurante</string>
+    <string name="app_name">DBP10-2021-2</string>
+    <string name="txt_input_name">Ingresa tu nombre:</string>
+    <string name="txt_toppings">Ingredientes</string>
+    <string name="txt_meat">Carne</string>
+    <string name="txt_pineapple">Pinha</string>
+    <string name="txt_quantity">Cantidad</string>
+    <string name="txt_submit_order">Enviar Orden</string>
+    <string name="order_summary_name">Hola <xliff:g id="name">%s</xliff:g></string>
+    <string name="order_summary_quantity">Cantidad: <xliff:g id="quantity">%d</xliff:g></string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="order_summary_has_meat">Tiene carne? <xliff:g id="meat">%s</xliff:g></string>
+    <string name="order_summary_has_pineapple">Tiene pinha? <xliff:g id="pineapple">%s</xliff:g></string>
+    <string name="total_order">Total: <xliff:g id="total">%d</xliff:g></string>
+    <string name="order_summary_thanks">Gracias!!</string>
+
+</resources>
