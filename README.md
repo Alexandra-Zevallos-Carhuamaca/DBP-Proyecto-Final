@@ -9,11 +9,10 @@ En pocas cuentas, ambos dispositivos sirvieron como una biblioteca de música po
 ## Objetivos :white_check_mark:
 
 - Objetivo general
-    - Crear una página web / plataforma capaz de interactuar con el usuario y conectarse a un servidor y una base de datos
+    - Crear una página web y una app movil capaces de interactuar con el usuario y conectarse a un servidor y una base de datos
 - Objetivos especificos
     - Implementar una interfaz deductiva, amigable e interactiva
     - Crear un modelo adecuado para guardar listas musicales
-    - Implementar el concepto de CRUD para el modelo principal de la página web
 
 ## Mision :dart:
 
@@ -34,6 +33,10 @@ Conectar recuerdos con canciones para atesorar los momentoes mas memorables junt
 - CSS
 
     Representación visual del HTML. Proporciona diseño y estilo a los bloques implementados en HTML.
+    
+ - XML
+
+    Metalenguaje que permite desarrollar otros tipos de lenguajes personalizados. Ayuda a construir elementos y modelos necesarios para la parte movil.
 
 ### Back-end
 
@@ -44,6 +47,10 @@ Conectar recuerdos con canciones para atesorar los momentoes mas memorables junt
 - Flask
 
     Framework que facilita la implementacion de las acciones en el servidor a traves de plantillas y librerias. 
+    
+- Java
+
+    Lenguaje de programacion ampliamente utilizado en la creacion de paginas web y aplicaciones. Brinda funcionalidades que permiten la abstraccion de modelos reales en arquitecturas de software basicas o incluso complejas.
 
 ### Base de datos
 
@@ -53,7 +60,9 @@ Conectar recuerdos con canciones para atesorar los momentoes mas memorables junt
 
 ## Script principal:      :briefcase:
 
-El script principal es el archivo con nombre [Mixxye.py](https://github.com/CarlosFloresCS/DBP-Mixxye/blob/main/aplicacion/Mixxye.py)
+En el caso de la pagina web, el script principal es el archivo con nombre [Mixxye.py](https://github.com/CarlosFloresCS/DBP-Mixxye/blob/main/aplicacion/Mixxye.py)
+
+En el caso de la app movil, el script principal es el archivo [MainActivity.java]
 
 ## Host :business_suit_levitating:
 
@@ -63,41 +72,26 @@ El proyecto emplea un host local ya que trabaja con la base de datos PostgreSQL.
 
 La autenticación se realizó gracias a la librería `werkzeug` y sus `import generate_password_hask` y `check_password_hash`, donde el primero genera la encriptación y el segundo comprueba si el valor cifrado coincide con el valor original.
 
-## Manejo de errores 
-
-- Redireccion (300 - 308)
-
-    Se muestra el mensaje por defecto del navegador que usa el usuario.
-
-- Errores de cliente (400 - 451)
-
-    Se muestra el mensaje por defecto del navegador que usa el usuario. Asimismo, se hace enfasis en la gestion de la memoria cache y las cookkies. Ademas, alguno de estos errores muestran un mensaje personalizado pidiendo al usuario que reingrese la solicitud.
-
-- Errores de servidor (500 - 511)
-
-    Se muestra el mensaje por defecto del navegador que usa el usuario.
-
 ## Request y responses :inbox_tray: | :outbox_tray: 
 
 - Registro
 
-    La solicitud del usuario es el registro de una cuenta en la plataforma. La respuesta de la misma es el redireccionamiento a un formulario para consignar los datos. Después de ser enviados por el usuario, muestra la página de inicio del perfil de la nueva cuenta.
+    La solicitud del usuario es el registro de una cuenta en la plataforma o la app. La respuesta de la misma es el redireccionamiento a un formulario para consignar los datos. Después de ser enviados por el usuario, muestra la página de inicio del perfil de la nueva cuenta.
 
 - Inicio de sesion
 
-    La solicitud del usuario es el logeo en la plataforma. La respuesta de la misma es el redireccionamiento a un formulario para consignar los datos de inicio de sesión. Después de ser enviados por el usuario, muestra la página de inicio del perfil de la nueva cuenta.
+    La solicitud del usuario es el logeo en la plataforma o app. La respuesta de la misma es el redireccionamiento a un formulario para consignar los datos de inicio de sesión. Después de ser enviados por el usuario, muestra la página de inicio del perfil de la nueva cuenta.
 
-- Registro de playlist
+- Registro de cancion o melodia
 
-    La solicitud del usuario inicia al entrar a la pagina de inicio de su perfil. En la parte superior izquierda, encuentra dos campos para registrar una cancion en su playlist, mediante el nombre y link de esta. El boton de *save* retorna como respuesta la visualizacion de la cancion agregada en la sección de *Mi biblioteca*.
+    La solicitud del usuario inicia al entrar a la pagina de inicio de su perfil. En la parte superior, encuentra dos campos para registrar una cancion en su lista musical personal, mediante el nombre y link de esta. El botón de *save* (version web) o *agregar* (version movil) retorna como respuesta la visualizacion de la cancion agregada en la sección de *Mi biblioteca* o *Mi lista musical*.
 
 - Eliminación de una canción
 
-    La solicitud del usuario es presionar el boton *delete* que se encuentra al lado derecho de la canción seleccionada en la sección *Mi biblioteca*. La respuesta de la página es quitar la canción de la lista del usuario asi como de la base de datos.
+    La solicitud del usuario es presionar el boton *delete* o *eliminar* que se encuentra al lado derecho de la canción seleccionada. La respuesta de la página es quitar la canción de la lista del usuario asi como de la base de datos.
 
-## Ejecución del sistema (Scripts) :card_index_dividers:
-
-Uno de los primeros archivos a ejecutar es aquel que contiene el [entorno virtual](https://github.com/CarlosFloresCS/DBP-Mixxye/tree/main/venv). Luego de este, se ejecuta el [cuerpo](https://github.com/CarlosFloresCS/DBP-Mixxye/tree/main/aplicacion) de la plataforma. En este ultimo se encuentra script principal es el archivo con nombre [Mixxye.py](https://github.com/CarlosFloresCS/DBP-Mixxye/blob/main/aplicacion/Mixxye.py).
+# Observaciones
+Hasta el momento, no se ha logrado establecer la conexión entre la base de datos y la app movil, sin embargo, la versión sí cuenta con dicha conexión.
 
 ## Integrantes :man_technologist:
 
