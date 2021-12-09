@@ -90,6 +90,25 @@ La autenticación se realizó gracias a la librería `werkzeug` y sus `import ge
 
     La solicitud del usuario es presionar el boton *delete* o *eliminar* que se encuentra al lado derecho de la canción seleccionada. La respuesta de la página es quitar la canción de la lista del usuario asi como de la base de datos.
 
+# Navegacion
+La navegacion a traves de la pagina web para poder agregar una canión a la lista se puede apreciar a continuacion:
+
+![Canciones guardadas desde un inicio](web1.png)
+
+![Cancion nueva agregada](web2.png)
+
+La navegacion a traves de la app movil para iniciar sesion/registrarse y acceder a la lista musical es la siguiente:
+
+![Pagina de bienvenida](app1.png)
+
+![Inicio de sesión](app2.png)
+
+![Crear cuenta nueva](app3.png)
+
+![Lista musical](app4.png)
+
+![Aplicacion externa](app5.png)
+
 # Observaciones
 Hasta el momento, no se ha logrado establecer la conexión entre la base de datos y la app movil, sin embargo, la versión sí cuenta con dicha conexión.
 
